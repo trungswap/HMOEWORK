@@ -109,29 +109,6 @@ public class baitap3
         String str = s91.nextLine();
         System.out.println(str.substring(1,9));
     }
-    public static void getDigit()
-    {
-        int count = 0;
-        Scanner s92 = new Scanner(System.in);
-        System.out.println("Nhap chuoi");
-        String str = s92.nextLine();
-        for (int i = 0; i < str.length(); i++)
-        {
-            if (Character.isDigit(str.charAt(i)))
-            {
-                count++;
-            }
-        }
-        int index = 0;
-        int a[] = new int[count];
-        for (int i = 0; i < count; i++) {
-            a[index] = Character.getNumericValue(str.charAt(i));
-            index++;
-        }
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
-        }
-    }
     public static void main(String[] args)
     {
         congchuoi();
@@ -144,6 +121,5 @@ public class baitap3
         demtongchucaithuong();
         catchuoi();
         catchuoi2();
-        getDigit();
     }
 }
